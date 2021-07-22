@@ -1,0 +1,4 @@
+#Tue Jul 20 21:11:06 CDT 2021
+base.0=D\:\\CP8\\ffacs\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

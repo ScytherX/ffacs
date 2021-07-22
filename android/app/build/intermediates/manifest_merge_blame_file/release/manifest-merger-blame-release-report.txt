@@ -1,0 +1,120 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ffacs"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:4:5-67
+11-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:4:22-64
+12
+13    <application
+13-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:6:5-24:19
+14        android:name="com.ffacs.MainApplication"
+14-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:7:7-38
+15        android:allowBackup="false"
+15-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:11:7-34
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.0.1] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\5c88c7a823069d8a87b7b248ad4b608f\core-1.0.1\AndroidManifest.xml:22:18-86
+17        android:icon="@mipmap/ic_launcher"
+17-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:9:7-41
+18        android:label="@string/app_name"
+18-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:8:7-39
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:10:7-52
+20        android:theme="@style/AppTheme" >
+20-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:12:7-38
+21        <activity
+21-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:13:7-23:18
+22            android:name="com.ffacs.MainActivity"
+22-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:14:9-37
+23            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+23-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:16:9-86
+24            android:label="@string/app_name"
+24-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:15:9-41
+25            android:launchMode="singleTask"
+25-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:17:9-40
+26            android:windowSoftInputMode="adjustResize" >
+26-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:18:9-51
+27            <intent-filter>
+27-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:19:9-22:25
+28                <action android:name="android.intent.action.MAIN" />
+28-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:20:13-65
+28-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:20:21-62
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:21:13-73
+30-->D:\CP8\ffacs\android\app\src\main\AndroidManifest.xml:21:23-70
+31            </intent-filter>
+32        </activity>
+33        <activity
+33-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\be5d8628c1dc97191f4b25e35be403f4\jetified-play-services-auth-19.0.0\AndroidManifest.xml:23:9-27:75
+34            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+34-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\be5d8628c1dc97191f4b25e35be403f4\jetified-play-services-auth-19.0.0\AndroidManifest.xml:24:13-93
+35            android:excludeFromRecents="true"
+35-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\be5d8628c1dc97191f4b25e35be403f4\jetified-play-services-auth-19.0.0\AndroidManifest.xml:25:13-46
+36            android:exported="false"
+36-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\be5d8628c1dc97191f4b25e35be403f4\jetified-play-services-auth-19.0.0\AndroidManifest.xml:26:13-37
+37            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+37-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\be5d8628c1dc97191f4b25e35be403f4\jetified-play-services-auth-19.0.0\AndroidManifest.xml:27:13-72
+38        <!--
+39            Service handling Google Sign-In user revocation. For apps that do not integrate with
+40            Google Sign-In, this service will never be started.
+41        -->
+42        <service
+42-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\be5d8628c1dc97191f4b25e35be403f4\jetified-play-services-auth-19.0.0\AndroidManifest.xml:33:9-37:51
+43            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+43-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\be5d8628c1dc97191f4b25e35be403f4\jetified-play-services-auth-19.0.0\AndroidManifest.xml:34:13-89
+44            android:exported="true"
+44-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\be5d8628c1dc97191f4b25e35be403f4\jetified-play-services-auth-19.0.0\AndroidManifest.xml:35:13-36
+45            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+45-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\be5d8628c1dc97191f4b25e35be403f4\jetified-play-services-auth-19.0.0\AndroidManifest.xml:36:13-107
+46            android:visibleToInstantApps="true" />
+46-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\be5d8628c1dc97191f4b25e35be403f4\jetified-play-services-auth-19.0.0\AndroidManifest.xml:37:13-48
+47
+48        <activity
+48-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\e6752a9f0d5483bce6b48c149a6c8de7\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+49            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+49-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\e6752a9f0d5483bce6b48c149a6c8de7\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+50            android:exported="false"
+50-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\e6752a9f0d5483bce6b48c149a6c8de7\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+51            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+51-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\e6752a9f0d5483bce6b48c149a6c8de7\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+52
+53        <provider
+53-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\0bd1bc406afe222d4abef9437aded611\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+54            android:name="com.google.firebase.provider.FirebaseInitProvider"
+54-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\0bd1bc406afe222d4abef9437aded611\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+55            android:authorities="com.ffacs.firebaseinitprovider"
+55-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\0bd1bc406afe222d4abef9437aded611\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+56            android:directBootAware="true"
+56-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\0bd1bc406afe222d4abef9437aded611\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+57            android:exported="false"
+57-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\0bd1bc406afe222d4abef9437aded611\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+58            android:initOrder="100" />
+58-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\0bd1bc406afe222d4abef9437aded611\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+59
+60        <service
+60-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\0bd1bc406afe222d4abef9437aded611\jetified-firebase-common-20.0.0\AndroidManifest.xml:33:9-37:35
+61            android:name="com.google.firebase.components.ComponentDiscoveryService"
+61-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\0bd1bc406afe222d4abef9437aded611\jetified-firebase-common-20.0.0\AndroidManifest.xml:34:13-84
+62            android:directBootAware="true"
+62-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\0bd1bc406afe222d4abef9437aded611\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+63            android:exported="false" />
+63-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\0bd1bc406afe222d4abef9437aded611\jetified-firebase-common-20.0.0\AndroidManifest.xml:36:13-37
+64
+65        <meta-data
+65-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\d92397ff7a927318a0ee8e7e0f82f574\jetified-play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
+66            android:name="com.google.android.gms.version"
+66-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\d92397ff7a927318a0ee8e7e0f82f574\jetified-play-services-basement-17.1.1\AndroidManifest.xml:24:13-58
+67            android:value="@integer/google_play_services_version" />
+67-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\Cesar\.gradle\caches\transforms-2\files-2.1\d92397ff7a927318a0ee8e7e0f82f574\jetified-play-services-basement-17.1.1\AndroidManifest.xml:25:13-66
+68    </application>
+69
+70</manifest>

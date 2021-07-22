@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1002126785268",
+    "project_id": "ffacs-c06d5",
+    "storage_bucket": "ffacs-c06d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002126785268:android:c93ab6f06d86e7a4e1bca1",
+        "android_client_info": {
+          "package_name": "com.ffacs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002126785268-paott6eu4344i6j8rq9975jrddtcdid4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAofCTR3ONyxBeuScQOIwwys5hK-7ZoNQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1002126785268-paott6eu4344i6j8rq9975jrddtcdid4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

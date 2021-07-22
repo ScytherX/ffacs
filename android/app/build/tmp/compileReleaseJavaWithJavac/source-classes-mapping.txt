@@ -1,0 +1,9 @@
+com/ffacs/BuildConfig.java
+ com.ffacs.BuildConfig
+com/ffacs/MainActivity.java
+ com.ffacs.MainActivity
+com/ffacs/MainApplication.java
+ com.ffacs.MainApplication
+ com.ffacs.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
