@@ -1,7 +1,9 @@
  
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
+import PropType from 'prop-types';
 import auth from '@react-native-firebase/auth';
+import {signInAnonymous, signOut, createUser} from './Firebase';
 
 export default function App() {
   // Set an initializing state whilst Firebase connects
@@ -23,8 +25,11 @@ export default function App() {
 
   if (!user) {
     return (
-      <View style={styles.container}>
+      <View style = {styles.container}>
         <Text>Login</Text>
+        <Button onClick = { signOut } title= "Log Out"></Button>
+        {/*<Button></Button>
+        <Button></Button>*/}
       </View>
     );
   }
@@ -32,6 +37,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Welcome {user.email}</Text>
+      <Button onClick = {createUser }  title="Log in with Jane"></Button>
     </View>
   );
 } 
@@ -44,3 +50,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
     },
     })
+
+  
