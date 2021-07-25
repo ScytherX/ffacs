@@ -15,6 +15,10 @@ import java.util.ArrayList;
 import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
 // @react-native-firebase/auth
 import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;
+// @react-native-google-signin/google-signin
+import co.apptailor.googlesignin.RNGoogleSigninPackage;
+// react-native-google-signin
+import co.apptailor.googlesignin.RNGoogleSigninPackage;
 
 public class PackageList {
   private Application application;
@@ -61,7 +65,9 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
       new ReactNativeFirebaseAppPackage(),
-      new ReactNativeFirebaseAuthPackage()
+      new ReactNativeFirebaseAuthPackage(),
+      new RNGoogleSigninPackage(),
+      new RNGoogleSigninPackage()
     ));
   }
 }

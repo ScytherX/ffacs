@@ -1,4 +1,5 @@
 import auth from '@react-native-firebase/auth';
+import { GoogleSignin } from '@react-native-google-signin/google-signin';
 
 const signInAnonymous = (e) => {
 
@@ -46,8 +47,5 @@ const signOut = (e) =>{
   
 }
 
-function signEmail(){
-  signInAnonymous();
-  createUser();
-  signOut();
-}
+
+  

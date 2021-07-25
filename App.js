@@ -1,9 +1,8 @@
  
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, createContext, Children } from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
-import PropType from 'prop-types';
 import auth from '@react-native-firebase/auth';
-import {signInAnonymous, signOut, createUser} from './Firebase';
+import {signOut, createUser} from './Firebase';
 
 export default function App() {
   // Set an initializing state whilst Firebase connects
@@ -26,18 +25,22 @@ export default function App() {
   if (!user) {
     return (
       <View style = {styles.container}>
+        <Button
+        title="Google Sign-In"
+        onPress={() => onGoogleButtonPress().then(() => console.log('Signed in with Google!'))}
+        />
         <Text>Login</Text>
-        <Button onClick = { signOut } title= "Log Out"></Button>
+        <Button onClick = {createUser }  title="Log in with Jane"></Button>
+        <Button onClick = { signOut } title= "Logoff"></Button>
         {/*<Button></Button>
         <Button></Button>*/}
-      </View>
+     </View>
     );
   }
 
   return (
     <View style={styles.container}>
       <Text>Welcome {user.email}</Text>
-      <Button onClick = {createUser }  title="Log in with Jane"></Button>
     </View>
   );
 } 
@@ -51,4 +54,18 @@ const styles = StyleSheet.create({
     },
     })
 
-  
+    GoogleSignin.configure({
+      webClientId: '1002126785268-paott6eu4344i6j8rq9975jrddtcdid4.apps.googleusercontent.com',
+    });
+      
+     
+        async function onGoogleButtonPress() {
+          // Get the users ID token
+          const { idToken } = await GoogleSignin.signIn();
+          
+          // Create a Google credential with the token
+          const googleCredential = auth.GoogleAuthProvider.credential(idToken);
+          
+          // Sign-in the user with the credential
+          return auth().signInWithCredential(googleCredential);
+        }
